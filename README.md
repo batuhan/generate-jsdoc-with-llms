@@ -1,10 +1,10 @@
-# LLM-based Code Refactoring Tool
+# LLM-based JSDoc generation tool
 
-This TypeScript program is designed to refactor a directory of code written in one programming language into another programming language using Language Models (LLMs).
+**Forked from https://github.com/jonluca/repo-refactor with almost no changes for testing.**
+
+This TypeScript program is designed to generate JSDoc for a directory of code written in JavaScript using Language Models (LLMs).
 
 ## Introduction
-
-Refactoring code from one programming language to another can be a daunting task, particularly when the languages are very different. Manual refactoring is often time-consuming and error-prone, as it requires a deep understanding of both the source and target languages, as well as the specific project requirements. This is where LLMs come in - they can be used to automate the refactoring process by analyzing the semantics and syntax of the source and target languages.
 
 This tool uses the OpenAI API, which provides a wide range of pre-trained LLMs for various languages. It also utilizes the [glob](https://github.com/isaacs/node-glob) package to match files and directories.
 
@@ -27,19 +27,19 @@ export OPENAI_API_KEY="<key>"
 You can also pass it to the cli using the `--openaiApiKey` flag:
 
 ```bash
-yarn start -- --openaiApiKey <key>
+yarn run run -- openaiApiKey <key>
 ```
 
 To use the program, simply run the following command:
 
 ```bash
-yarn start -- --src <source_directory> --dest <destination_directory> --from <source_language> --to <target_language>
+yarn run run -- src <source_directory> --dest <destination_directory> --from <source_language> --to <target_language>
 ```
 
 Here's an example:
 
 ```bash
-npm start -- --src ./src --dest ./dist --from python --to javascript
+yarn run run -- src ./src --dest ./dist --from python --to javascript
 ```
 
 This command will refactor all files in the `src` directory that have a `.py` extension into JavaScript files with a `.js` extension, and place the refactored files in the `dist` directory.

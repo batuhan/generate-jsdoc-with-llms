@@ -25,8 +25,8 @@ export class Refactor {
     const files = await listFiles(srcDir);
     logger.info(`Found ${files.length} files in source directory`);
 
-    const validExtensions = LANGUAGE_EXTENSION_MAP[this.opts.from as keyof typeof LANGUAGE_EXTENSION_MAP];
-    const newExtension = LANGUAGE_EXTENSION_MAP[this.opts.to as keyof typeof LANGUAGE_EXTENSION_MAP][0];
+    const validExtensions = LANGUAGE_EXTENSION_MAP['javascript'];
+    const newExtension = LANGUAGE_EXTENSION_MAP['javascript'][0];
     // Refactor each file
     const fullSrcDir = jetpack.dir(srcDir);
     const fullDestDir = jetpack.dir(destDir);

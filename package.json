@@ -1,9 +1,9 @@
 {
-  "name": "repo-refactor",
+  "name": "generate-jsdoc-with-llms",
   "version": "0.0.0-development",
   "license": "MIT",
   "author": "Jonluca DeCaro <reporefactor@jonlu.ca>",
-  "description": "Convert a directory into a different one of your choosing",
+  "description": "Generates JSDoc blocks",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
@@ -21,12 +21,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jonluca/repo-refactor.git"
+    "url": "git+https://github.com/batuhan/generate-jsdoc-with-llms.git"
   },
   "bugs": {
-    "url": "https://github.com/jonluca/repo-refactor/issues"
+    "url": "https://github.com/batuhan/generate-jsdoc-with-llms/issues"
   },
-  "homepage": "https://github.com/jonluca/repo-refactor",
+  "homepage": "https://github.com/batuhan/generate-jsdoc-with-llms",
   "scripts": {
     "prepublishOnly": "yarn build",
     "t-node": "node --experimental-specifier-resolution=node --no-warnings --loader ts-node/esm/transpile-only",
